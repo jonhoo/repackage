@@ -1,0 +1,11 @@
+[licenses]
+unlicensed = "warn"
+copyleft = "deny"
+allow-osi-fsf-free = "neither"
+default = "deny"
+allow = [
+	"Apache-2.0",
+	"MIT",
+	"MIT-0",
+]
+private = { ignore = true }
