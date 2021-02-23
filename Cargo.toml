@@ -5,6 +5,12 @@ authors = ["Jon Gjengset <jongje@thesquareplanet.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
 
+description = "An infernal tool to repackage a .crate file under another name"
+repository = "https://github.com/jonhoo/repackage"
+
+keywords = ["packaging", "crate", "rename"]
+categories = ["development-tools::build-utils", "command-line-utilities"]
+
 [dependencies]
 anyhow = "1"
 tar = { version = "0.4.32", default-features = false }
