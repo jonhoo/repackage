@@ -1,3 +1,8 @@
+[![Build Status](https://dev.azure.com/jonhoo/jonhoo/_apis/build/status/repackage?branchName=master)](https://dev.azure.com/jonhoo/jonhoo/_build/latest?definitionId=32&branchName=master)
+[![Codecov](https://codecov.io/github/jonhoo/repackage/coverage.svg?branch=master)](https://codecov.io/gh/jonhoo/repackage)
+[![Crates.io](https://img.shields.io/crates/v/repackage.svg)](https://crates.io/crates/repackage)
+[![Documentation](https://docs.rs/repackage/badge.svg)](https://docs.rs/repackage/)
+
 Repackage Rust `.crate` files under a different crate name.
 
 This crate provides `repackage::dot_crate`, which repackages a `.crate`
