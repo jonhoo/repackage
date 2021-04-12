@@ -1,6 +1,6 @@
 [package]
 name = "repackage"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jon Gjengset <jongje@thesquareplanet.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
@@ -14,6 +14,6 @@ categories = ["development-tools::build-utils", "command-line-utilities"]
 [dependencies]
 anyhow = "1"
 tar = { version = "0.4.32", default-features = false }
-cargo_toml = "0.8.1"
+cargo_toml = "0.9.0"
 toml = "0.5.6"
 flate2 = { version = "1.0.3", default-features = false, features = ["zlib"] }
