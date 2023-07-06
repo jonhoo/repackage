@@ -187,7 +187,9 @@ pub fn dot_crate(
             // See https://github.com/alexcrichton/toml-rs/issues/142#issuecomment-278970591
             let manifest =
                 toml::Value::try_from(&manifest).context("serialize modified Cargo.toml")?;
-            let bytes = toml::to_vec(&manifest).context("serialize modified Cargo.toml")?;
+            let bytes = toml::to_string(&manifest)
+                .context("serialize modified Cargo.toml")?
+                .into_bytes();
             let mut bytes = &bytes[..]; // to give us io::Read
             header.set_size(bytes.len() as u64);
             header.set_cksum();
