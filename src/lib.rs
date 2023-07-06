@@ -14,7 +14,7 @@
 //! the `.crate`. But, _just_ in case, this crate tries to modify those files as well using some
 //! simple string replacement. It's brittle though, so you might only get so far with that approach
 //! if you make heavy use of non-library artifacts in the produced `.crate` files.
-#![warn(missing_docs, broken_intra_doc_links)]
+#![warn(missing_docs, rustdoc::broken_intra_doc_links)]
 
 use anyhow::Context;
 use cargo_toml::Manifest;
