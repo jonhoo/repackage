@@ -7,5 +7,5 @@ fn main() -> anyhow::Result<()> {
         );
     }
 
-    repackage::dot_crate(&args.next().unwrap(), None, &args.next().unwrap())
+    repackage::dot_crate(args.next().unwrap(), None, &args.next().unwrap())
 }

@@ -92,7 +92,7 @@ pub fn dot_crate(
     let repackaged_path = dot_crate.with_file_name(repackaged_fn);
     let repackaged = std::fs::File::create(&repackaged_path)?;
     let dot_crate_path = dot_crate;
-    let dot_crate = std::fs::File::open(&dot_crate_path)?;
+    let dot_crate = std::fs::File::open(dot_crate_path)?;
 
     // https://github.com/rust-lang/cargo/blob/8e075c9cab41eb1ed6222f819924999476477f2e/src/cargo/ops/cargo_package.rs#L481
     let dot_crate = flate2::read::GzDecoder::new(dot_crate);
@@ -174,7 +174,7 @@ pub fn dot_crate(
             let p = manifest.package.as_mut().ok_or_else(|| {
                 anyhow::anyhow!("Cargo.toml in .crate file does not contain a package")
             })?;
-            if &p.name != old_name {
+            if p.name != old_name {
                 anyhow::bail!(
                     "crate name in .crate ('{}') file did not match given name ('{}')",
                     p.name,
