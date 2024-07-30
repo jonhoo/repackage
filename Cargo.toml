@@ -1,6 +1,6 @@
 [package]
 name = "repackage"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Jon Gjengset <jongje@thesquareplanet.com>"]
 edition = "2018"
 rust-version = "1.64"
